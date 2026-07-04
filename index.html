@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A.S.P.T - Tư vấn & Xây dựng Hạng 1</title>
+    <meta name="description" content="Công ty TNHH MTV Tư vấn & Xây dựng A.S.P.T - Chuyên gia thiết kế nhà cao tầng, công nghiệp và giải pháp BIM hàng đầu với 15 năm kinh nghiệm.">
+    
+    <!-- Google Analytics (GA4) Placeholder -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-XXXXXXXXXX');
+    </script>
+    
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container nav-content">
+            <div class="logo">
+                <a href="#" style="display: flex; align-items: center;"><img src="assets/images/logo.jpg" alt="A.S.P.T Logo" style="height: 40px; margin-right: 10px;">A.S.P.T <span>Co, Ltd</span></a>
+            </div>
+            
+            <div class="menu-toggle" id="mobile-menu" style="display: none; cursor: pointer; font-size: 24px; color: var(--primary-color);">
+                <i class="fas fa-bars"></i>
+            </div>
+            
+            <ul class="nav-links" id="nav-links">
+                <li class="lang-switcher" style="display: flex; gap: 8px;">
+                    <button onclick="changeLanguage('vi')" class="lang-btn" title="Tiếng Việt" style="font-size: 12px; font-weight: bold; font-family: sans-serif;">VN</button>
+                    <button onclick="changeLanguage('en')" class="lang-btn" title="English" style="font-size: 12px; font-weight: bold; font-family: sans-serif;">EN</button>
+                    <button onclick="changeLanguage('ja')" class="lang-btn" title="日本語" style="font-size: 12px; font-weight: bold; font-family: sans-serif;">JP</button>
+                    <button onclick="changeLanguage('zh')" class="lang-btn" title="中文" style="font-size: 12px; font-weight: bold; font-family: sans-serif;">CN</button>
+                </li>
+
+                <li><a href="#trang-chu" data-i18n="nav-home">Trang Chủ</a></li>
+                <li><a href="#ve-chung-toi" data-i18n="nav-about">Giới thiệu</a></li>
+                <li><a href="#giai-phap" data-i18n="nav-solutions">Giải pháp</a></li>
+                <li><a href="#du-an" data-i18n="nav-projects" onclick="if(typeof resetAndScrollToProjects === 'function') { resetAndScrollToProjects(); return false; }">Dự án</a></li>
+                <li><a href="#nang-luc" data-i18n="nav-capabilities">Năng lực</a></li>
+                <li><a href="#lien-he" class="btn-primary" data-i18n="nav-contact">Liên hệ ngay</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Floating Contact Buttons -->
+    <div class="floating-contact">
+        <a href="tel:0982145011" class="contact-btn phone" title="Gọi điện">
+            <i class="fas fa-phone-alt"></i>
+        </a>
+        <a href="https://zalo.me/0982145011" class="contact-btn zalo" title="Zalo" target="_blank">
+            Zalo
+        </a>
+        <a href="https://t.me/your_telegram_id" class="contact-btn telegram" title="Telegram" target="_blank">
+            <i class="fab fa-telegram-plane"></i>
+        </a>
+    </div>
+
+    <!-- Hero Section -->
+    <header id="trang-chu" class="hero">
+        <!-- Hero Background Slider -->
+        <div class="hero-slider">
+            <div class="slide active" style="background-image: url('assets/images/hero_img_0.JPG');"></div>
+            <div class="slide" style="background-image: url('assets/images/hero_img_1.JPG');"></div>
+            <div class="slide" style="background-image: url('assets/images/hero_img_2.JPG');"></div>
+            <div class="slide" style="background-image: url('assets/images/hero_img_3.JPG');"></div>
+            <div class="slide" style="background-image: url('assets/images/hero_img_4.JPG');"></div>
+            <div class="slide" style="background-image: url('assets/images/hero_img_5.JPG');"></div>
+            <div class="slide" style="background-image: url('assets/images/hero_img_6.JPG');"></div>
+            <div class="slide" style="background-image: url('assets/images/hero_img_7.JPG');"></div>
+            <div class="slide" style="background-image: url('assets/images/hero_img_8.JPG');"></div>
+            <div class="slide" style="background-image: url('assets/images/hero_img_9.JPG');"></div>
+            <div class="slide" style="background-image: url('assets/images/hero_img_10.JPG');"></div>
+            <div class="slide" style="background-image: url('assets/images/hero_img_11.JPG');"></div>
+            <div class="slide" style="background-image: url('assets/images/hero_img_12.JPG');"></div>
+            <div class="slide" style="background-image: url('assets/images/hero_img_13.JPG');"></div>
+            <div class="slide" style="background-image: url('assets/images/hero_img_14.JPG');"></div>
+        </div>
+        <div class="hero-bg-overlay"></div>
+
+        <div class="container hero-content">
+            <h1 data-i18n="hero-title">Giải Pháp Thiết Kế Xây Dựng <span>Hạng 1</span></h1>
+            <p data-i18n="hero-desc">15 năm kinh nghiệm. Hơn 100 dự án lớn. Ứng dụng BIM chuyên sâu.</p>
+            <p class="sub-text" data-i18n="hero-sub">Đồng hành cùng Chủ đầu tư giải quyết bài toán phức tạp về Kiến trúc, Kết cấu, Cơ điện và Pháp lý.</p>
+            <div class="hero-actions">
+                <a href="#giai-phap" class="btn-primary" data-i18n="hero-btn-primary">Khám phá giải pháp dành cho khách hàng</a>
+                <a href="#du-an" class="btn-secondary" data-i18n="hero-btn-secondary">Xem Dự án</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Thống kê năng lực -->
+    <section class="stats">
+        <div class="container stats-grid">
+            <div class="stat-item">
+                <h3 class="counter" data-target="15">0</h3>
+                <p data-i18n="stat-exp">Năm kinh nghiệm</p>
+            </div>
+            <div class="stat-item">
+                <h3 class="counter" data-target="100">0</h3>
+                <p data-i18n="stat-projects">+ Dự án tiêu biểu</p>
+            </div>
+            <div class="stat-item">
+                <h3 class="counter" data-target="1">0</h3>
+                <p data-i18n="stat-area">Triệu m² sàn thiết kế</p>
+            </div>
+            <div class="stat-item">
+                <h3 class="counter" data-target="45">0</h3>
+                <p data-i18n="stat-floors">Tầng (Công trình cao nhất)</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Về Chúng Tôi (About Us) -->
+    <section id="ve-chung-toi" class="section">
+        <div class="container">
+            <div class="section-title text-center">
+                <h2 data-i18n="about-title">Giới Thiệu Về A.S.P.T</h2>
+                <p data-i18n="about-subtitle">Công ty TNHH MTV Tư vấn & Xây dựng A.S.P.T</p>
+            </div>
+            
+            <div class="about-grid" style="grid-template-columns: 1fr; gap: 20px;">
+                <div class="about-content" style="background: var(--white); padding: 40px; border-radius: 10px; box-shadow: 0 5px 20px rgba(0,0,0,0.05); text-align: justify;">
+                    <p data-i18n="about-p1"><strong>1. Trụ sở công ty:</strong> 82 & 84 đường Ngô Tất Tố, phường Hòa Cường, thành phố Đà Nẵng.<br><strong>Điện thoại giao dịch:</strong> (0236)-362.46.96 | <strong>Website:</strong> www.aspt.vn<br><strong>Chủ doanh nghiệp:</strong> Lê Viết Thành (CEO), mobile: 098.214.5011</p>
+                    
+                    <hr style="margin: 20px 0; border: 0; border-top: 1px solid #eee;">
+                    
+                    <p data-i18n="about-p2"><strong>2. Ngày thành lập:</strong> 11/05/2011, theo giấy chứng nhận đăng ký kinh doanh số 0401423059 của Sở Kế hoạch Đầu tư Tp Đà Nẵng.</p>
+                    
+                    <hr style="margin: 20px 0; border: 0; border-top: 1px solid #eee;">
+                    
+                    <p data-i18n="about-p3"><strong>3. Ngành nghề kinh doanh:</strong></p>
+                    <ul style="margin-left: 20px; margin-bottom: 20px; list-style-type: disc;">
+                        <li data-i18n="about-l3-1">Thiết kế Kiến trúc công trình Dân dụng & Công nghiệp.</li>
+                        <li data-i18n="about-l3-2">Thiết kế Kết cấu công trình Dân dụng & Công nghiệp.</li>
+                        <li data-i18n="about-l3-3\">Thiết kế Cơ-Điện công trình Dân dụng & Công nghiệp.</li>
+                        <li data-i18n="about-l3-4">Lập quy hoạch 1/500 và hỗ trợ pháp lý trong quá trình thẩm định PCCC và xin cấp GPXD.</li>
+                    </ul>
+                    
+                    <p data-i18n="about-p4"><strong>4. Giới thiệu công ty:</strong></p>
+                    <p style="margin-bottom: 15px;" data-i18n="about-p4-desc1">Công ty TNHH MTV Tư vấn và Xây dựng A.S.P.T chuyên thiết kế các công trình dân dụng, công nghiệp, đặc biệt là nhà cao tầng và các dự án có kết cấu phức tạp. Chúng tôi đã thực hiện nhiều công trình quy mô lớn, bao gồm các khách sạn tiêu chuẩn quốc tế, nhà máy và nhiều công trình đặc thù khác.</p>
+                    <p style="margin-bottom: 15px;" data-i18n="about-p4-desc2">Thế mạnh của công ty chúng tôi nổi bật ở các điểm sau: Đội ngũ chủ trì thiết kế đều có chứng chỉ hạng 1 và giàu kinh nghiệm, giúp phối hợp công việc hiệu quả. Toàn bộ quá trình thiết kế được thực hiện đồng bộ trên nền tảng BIM, đảm bảo sản phẩm chính xác và chất lượng. Chúng tôi có bề dày kinh nghiệm trong việc thiết kế các kết cấu phức tạp và hệ thống MEP, HVAC quy mô lớn. Sự am hiểu pháp luật và thực tiễn giúp công ty hỗ trợ pháp lý tối ưu cho các dự án. Ngoài ra, việc hợp tác với các đối tác kiến trúc uy tín tại Nhật Bản giúp chúng tôi cung cấp dịch vụ tổng thầu thiết kế chất lượng cao với chi phí hợp lý.</p>
+                    
+                    <!-- Nút xem thêm nội dung văn bản giới thiệu kiểu Google Search -->
+                    <div id="about-toggle-wrapper" style="text-align: center; margin: 30px auto 15px; width: 100%; max-width: 900px; display: flex; justify-content: center;">
+                        <button id="btn-toggle-about-text" onmouseenter="this.style.backgroundColor='#f8f9fa'; this.style.borderColor='#d2d4d7';" onmouseleave="this.style.backgroundColor='#fff'; this.style.borderColor='#dadce0';" style="display: inline-flex; align-items: center; justify-content: center; width: 100%; padding: 13px 24px; font-size: 14px; font-weight: 500; color: var(--primary-color); background: #fff; border: 1px solid #dadce0; border-radius: 100px; cursor: pointer; transition: background-color 0.2s, border-color 0.2s; box-shadow: 0 1px 2px rgba(0,0,0,0.05); outline: none;">
+                            <span data-i18n="about-toggle-expand">Xem chi tiết năng lực & công cụ</span>
+                            <i class="fas fa-chevron-down" style="margin-left: 8px; font-size: 12px; color: var(--primary-color);"></i>
+                        </button>
+                    </div>
+
+                    <!-- KHU VỰC THU GỌN -->
+                    <div id="about-expanded-area" style="display: none; border-top: 1px dashed #eee; padding-top: 20px; margin-top: 10px;">
+                        <p data-i18n="about-p5"><strong>Công ty A.S.P.T đã được cấp:</strong></p>
+                        <ul style="margin-left: 20px; margin-bottom: 20px; list-style-type: disc;">
+                            <li data-i18n="about-l5-1">Chứng chỉ Năng lực Hoạt động Xây dựng số 00000650 Hạng 1 ở nội dung thiết kế và thẩm tra công trình Dân dụng.</li>
+                            <li data-i18n="about-l5-2">Chứng chỉ Năng lực Hoạt động Xây dựng số DNA-00000650 Hạng 2 ở nội dung thiết kế và thẩm tra công trình Nhà Công nghiệp.</li>
+                            <li data-i18n="about-l5-3">Chứng chỉ Năng lực Hoạt động Xây dựng số HCM-00000650 Hạng 3 ở nội dung lập thiết kế quy hoạch xây dựng và thiết kế, thẩm tra công trình Hạ tầng kỹ thuật.</li>
+                        </ul>
+                        
+                        <p data-i18n="about-p6"><strong>5. Tiêu chí thiết kế:</strong> Tập trung nâng cao năng lực nhân sự và công cụ để cung cấp hồ sơ thiết kế chất lượng cao. Áp dụng giải pháp kỹ thuật tối ưu giúp chủ đầu tư tiết kiệm chi phí xây dựng, duy trì mức phí cạnh tranh, đảm bảo tiến độ nhanh và linh hoạt cập nhật thay đổi của dự án.</p>
+                        
+                        <hr style="margin: 20px 0; border: 0; border-top: 1px solid #eee;">
+                        
+                        <p data-i18n="about-p7"><strong>6. Đối tượng khách hàng tiềm năng:</strong></p>
+                        <ul style="margin-left: 20px; margin-bottom: 20px; list-style-type: disc;">
+                            <li data-i18n="about-l7-1">Các chủ đầu tư dự án dân dụng quy mô từ trung bình tới lớn (đến cấp 1), bao gồm cả nội dung quy hoạch và thiết kế hạ tầng kỹ thuật.</li>
+                            <li data-i18n="about-l7-2">Các chủ đầu tư công trình căn hộ dòng tiền, biệt thự quy mô trung bình.</li>
+                            <li data-i18n="about-l7-3">Các chủ đầu tư các nhà máy, xí nghiệp, công trình công nghiệp quy mô từ nhỏ tới lớn (đến cấp 2), bao gồm cả nội dung quy hoạch và thiết kế hạ tầng kỹ thuật.</li>
+                            <li data-i18n="about-l7-4">Những đơn vị thiết kế chỉ chuyên sâu vào một lĩnh vực duy nhất đang có mong muốn liên kết thành lập liên danh nhằm cùng nhau đảm nhận thiết kế tổng thể dự án.</li>
+                            <li data-i18n="about-l7-5">Các đơn vị thi công đang tìm kiếm nhà thầu thiết kế để lập liên doanh D&B.</li>
+                        </ul>
+                        
+                        <p data-i18n="about-p8"><strong>7. Công trình tiêu biểu đã thiết kế:</strong> Với hơn 15 năm kinh nghiệm, chúng tôi đã thiết kế hơn 100 công trình có quy mô từ trung bình đến lớn, tiêu biểu như khách sạn Regis Bay, Brilliant, Vanda, Rosamia, Mường Thanh, TMS Luxury, tòa tháp PA Tower, vòng quay Sun Wheel, du thuyền Marina, Bệnh viện Gia đình, Đại học Đông Á, Tòa tháp văn phòng Danapha, nhà máy Danapha tại khu công nghệ cao, các dự án trường học FPT tại nhiều địa phương trên phạm vi cả nước,…</p>
+                        
+                        <p style="margin-top: 15px;" data-i18n="about-p9"><strong>8. Công cụ:</strong> Công ty đã đầu tư nhiều phần mềm bản quyền như: Etabs Ultimate v23, Adapt Builder 2020, Autodesk AEC (gồm Revit, Autocad, Naviswork, RSAP, Advance Steel, Civil 3D,…), Dbim & Dbim Steel, Ketcausoft, G8, CADEWA, ….</p>
+                    </div>
+                    
+                    <div style="margin-top: 30px; text-align: center; border-top: 1px solid #eee; padding-top: 20px;">
+                        <button id="btn-more-about" class="btn-primary" data-i18n="about-btn-more">Xem thêm thông tin về chúng tôi</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Giải pháp Khách hàng -->
+    <section id="giai-phap" class="section bg-light">
+        <div class="container">
+            <div class="section-title text-center">
+                <h2 data-i18n="sol-title">Giải Pháp Dành Cho Khách Hàng</h2>
+                <p data-i18n="sol-subtitle">ASPT không chỉ cung cấp bản vẽ, chúng tôi mang đến giải pháp toàn diện, giải quyết mọi bài toán kỹ thuật và pháp lý.</p>
+            </div>
+            <div class="solutions-grid">
+                <div class="solution-card" onclick="openSolutionDetail('1')" style="cursor: pointer;">
+                    <div class="icon"><i class="fas fa-building"></i></div>
+                    <h3 data-i18n="sol-1-t">Chủ đầu tư Dự án Lớn (Cấp 1, Cấp 2)</h3>
+                    <p data-i18n="sol-1-d">Tổng thầu thiết kế Kiến trúc, Kết cấu, MEP. Kinh nghiệm xử lý hầm sâu, nền đất yếu, cầu trục 100 tấn và thủ tục pháp lý phức tạp.</p>
+                </div>
+                <div class="solution-card" onclick="openSolutionDetail('2')" style="cursor: pointer;">
+                    <div class="icon"><i class="fas fa-home"></i></div>
+                    <h3 data-i18n="sol-2-t">Chủ đầu tư Dự án Vừa & Nhỏ</h3>
+                    <p data-i18n="sol-2-d">Giải pháp tối ưu chi phí và không gian cho căn hộ cho thuê (6-9 tầng), khách sạn mini, biệt thự cao cấp.</p>
+                </div>
+                <div class="solution-card" onclick="openSolutionDetail('3')" style="cursor: pointer;">
+                    <div class="icon"><i class="fas fa-handshake"></i></div>
+                    <h3 data-i18n="sol-3-t">Đối Tác Thiết Kế (B2B)</h3>
+                    <p data-i18n="sol-3-d">Hợp tác thiết kế chuyên sâu Kết cấu, Cơ điện, Lập dự toán, và triển khai mô hình BIM (LOD 300 - 400).</p>
+                </div>
+                <div class="solution-card" onclick="openSolutionDetail('4')" style="cursor: pointer;">
+                    <div class="icon"><i class="fas fa-map-marked-alt"></i></div>
+                    <h3 data-i18n="sol-4-t">Chủ đầu tư Dự án Quy hoạch & Hạ tầng kỹ thuật</h3>
+                    <p data-i18n="sol-4-d">Lập quy hoạch chi tiết 1/500, thiết kế cơ sở hạ tầng kỹ thuật (cấp 3) nhanh chóng, chuẩn xác.</p>
+                </div>
+            </div>
+            
+            <div style="margin-top: 40px; text-align: center;">
+                <button id="btn-chat-ai" class="btn-primary" data-i18n="sol-btn-ai">Trao đổi với AI-Agent của chúng tôi về dự án của bạn</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Dự án Tiêu biểu -->
+    <section id="du-an" class="section">
+        <div class="container">
+            <div class="section-title text-center">
+                <h2 data-i18n="proj-title">Các Nhóm Dự Án Tiêu Biểu</h2>
+                <p data-i18n="proj-subtitle" style="white-space: nowrap;">Những công trình khẳng định năng lực Hạng 1 của ASPT trên khắp cả nước.</p>
+            </div>
+            
+            <!-- Breadcrumb / Back Button -->
+            <div id="project-navigation" style="display: none; margin-bottom: 20px; position: sticky; top: 70px; z-index: 100; background: rgba(255, 255, 255, 0.95); padding: 10px; border-radius: 8px; box-shadow: 0 4px 15px rgba(0,0,0,0.05); backdrop-filter: blur(5px);">
+                <button id="btn-back-projects" class="btn-secondary" style="color: var(--primary-color); border-color: var(--primary-color); padding: 8px 16px;" data-i18n="btn-back-simple">
+                    <i class="fas fa-arrow-left"></i> Quay lại
+                </button>
+                <h3 id="current-group-title" style="display: inline-block; margin-left: 15px; color: var(--primary-color); margin-bottom: 0;"></h3>
+            </div>
+
+            <!-- Container for 3 Levels -->
+            <div id="dynamic-portfolio" class="portfolio-container">
+                <!-- Danh sách nhóm, danh sách dự án, và chi tiết sẽ được load bằng Javascript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Năng lực -->
+    <section id="nang-luc" class="section bg-primary text-white">
+        <div class="container">
+            <div class="section-title text-center">
+                <h2 style="color: white;" data-i18n="cap-title">Năng Lực Cốt Lõi</h2>
+                <p style="color: rgba(255,255,255,0.8);" data-i18n="cap-subtitle">Sở hữu đội ngũ chuyên gia và phần mềm bản quyền hàng đầu.</p>
+            </div>
+            <div class="capabilities-grid">
+                <div class="capability-item">
+                    <i class="fas fa-certificate fa-3x mb-3"></i>
+                    <h3 data-i18n="cap-1-t">Chứng chỉ Hạng 1</h3>
+                    <p data-i18n="cap-1-d">BXD-00000650: Thiết kế & Thẩm tra Dân dụng Hạng 1. Đội ngũ chủ trì cơ hữu giàu kinh nghiệm.</p>
+                </div>
+                <div class="capability-item">
+                    <i class="fas fa-laptop-code fa-3x mb-3"></i>
+                    <h3 data-i18n="cap-2-t">Công nghệ BIM</h3>
+                    <p data-i18n="cap-2-d">Ứng dụng triệt để BIM trong thiết kế giúp phát hiện xung đột sớm, tối ưu khối lượng và chi phí thi công.</p>
+                </div>
+                <div class="capability-item">
+                    <i class="fas fa-gavel fa-3x mb-3"></i>
+                    <h3 data-i18n="cap-3-t">Pháp lý Vững vàng</h3>
+                    <p>Đồng hành xử lý các thủ tục cấp phép, thẩm định PCCC nhanh chóng theo quy định mới nhất 2026.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="lien-he" class="footer">
+        <div class="container footer-grid">
+            <div class="footer-about">
+                <h3>A.S.P.T <span>Co, Ltd</span></h3>
+                <p data-i18n="footer-about">Công ty TNHH MTV Tư vấn & Xây dựng A.S.P.T - Giải pháp thiết kế xây dựng Hạng 1 toàn diện cho mọi công trình.</p>
+                <div style="margin-top: 20px;">
+                    <button id="btn-recruitment" class="btn-primary" style="padding: 8px 16px; font-size: 14px;" data-i18n="footer-recruitment-btn">Liên hệ tuyển dụng</button>
+                </div>
+            </div>
+            <div class="footer-contact">
+                <h4 data-i18n="footer-contact-title">Liên hệ</h4>
+                <p><i class="fas fa-map-marker-alt"></i> <span data-i18n="footer-contact-address">82 & 84 Ngô Tất Tố, phường Hòa Cường, Thành phố Đà Nẵng, Việt Nam</span></p>
+                <p><i class="fas fa-phone-alt"></i> <a href="tel:02363624696" style="color: inherit; text-decoration: none;">0236 3624 696</a> | <a href="tel:0982145011" style="color: inherit; font-weight: bold; text-decoration: none;">098.214.5011 (Mr. Thành)</a></p>
+                <p><i class="fas fa-envelope"></i> <a href="mailto:aspt@aspt.vn" style="color: inherit; text-decoration: none;">aspt@aspt.vn</a></p>
+                <div style="margin-top: 15px; border-radius: 8px; overflow: hidden;">
+                    <iframe src="https://maps.google.com/maps?q=Công+ty+TNHH+MTV+Tư+vấn+và+Xây+dựng+A.S.P.T,+84+Ngô+Tất+Tố,+Đà+Nẵng&t=&z=16&ie=UTF8&iwloc=&output=embed" width="100%" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+            <div class="footer-social">
+                <h4 data-i18n="footer-connect">Kết nối</h4>
+                <div class="social-icons" style="display: flex; gap: 10px; align-items: center;">
+                    <a href="https://zalo.me/0982145011" target="_blank" style="font-weight: 800; font-family: 'Inter', sans-serif; font-size: 11px; width: 36px; height: 36px; display: inline-flex; align-items: center; justify-content: center; border-radius: 50%; background: #0068ff; color: white !important; text-decoration: none; transition: transform 0.2s, background-color 0.2s;" onmouseenter="this.style.transform='scale(1.1)'; this.style.backgroundColor='#0052cc';" onmouseleave="this.style.transform='scale(1)'; this.style.backgroundColor='#0068ff';">Zalo</a>
+                    <a href="https://www.facebook.com/profile.php?id=100063620948347" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 A.S.P.T Co, Ltd. All rights reserved.</p>
+        </div>
+    </footer>
+    <!-- MODAL 1: GIỚI THIỆU CHI TIẾT (PHÁP LÝ & HOẠT ĐỘNG) -->
+    <div id="modal-about" class="custom-modal">
+        <div class="modal-content-wrapper solutions-modal-width">
+            <span class="modal-close" onclick="closeModal('modal-about')">&times;</span>
+            <h2 id="about-modal-title" style="margin-bottom: 20px; color: var(--primary-color);">Về Chúng Tôi - A.S.P.T</h2>
+            
+            <!-- VIEW 1: DANH SÁCH TÀI LIỆU/VĂN HÓA (2 TABS) -->
+            <div id="about-list-view" class="about-list-view">
+                <div class="modal-tabs" style="margin-bottom: 15px;">
+                    <button class="tab-btn active" onclick="switchAboutTab(event, 'tab-legal')" data-i18n="modal-about-tab-legal">Hồ sơ pháp lý</button>
+                    <button class="tab-btn" onclick="switchAboutTab(event, 'tab-activities')" data-i18n="modal-about-tab-activities">Hoạt động & Văn hóa</button>
+                </div>
+                
+                <div id="tab-legal" class="tab-content active">
+                    <p data-i18n="modal-legal-p1" style="margin-bottom: 15px;">Dưới đây là các văn bản pháp lý khẳng định năng lực Hạng 1 và Hồ sơ năng lực của chúng tôi:</p>
+                    <div id="about-legal-items" style="display: flex; flex-direction: column; gap: 10px;">
+                        <!-- Sẽ nạp động danh sách pháp lý dạng hàng ngang bằng JS -->
+                    </div>
+                </div>
+                
+                <div id="tab-activities" class="tab-content">
+                    <p data-i18n="modal-act-p1" style="margin-bottom: 15px;">Một số hình ảnh và video về văn hóa doanh nghiệp và hoạt động nội bộ của A.S.P.T:</p>
+                    <div id="about-culture-items" style="display: flex; flex-direction: column; gap: 10px;">
+                        <!-- Sẽ nạp động danh sách văn hóa dạng hàng ngang bằng JS -->
+                    </div>
+                </div>
+            </div>
+
+            <!-- VIEW 2: CHI TIẾT TÀI LIỆU / ALBUM VĂN HÓA -->
+            <div id="about-detail-view" class="about-detail-view" style="display: none;">
+                <button id="btn-back-to-about-list" class="btn-secondary" style="margin-bottom: 15px; font-size: 13px; padding: 8px 16px; display: inline-flex; align-items: center; gap: 8px; border: 2px solid var(--primary-color); color: var(--primary-color) !important; background-color: transparent; cursor: pointer; border-radius: 6px; font-weight: 600;" data-i18n="btn-back">
+                    <i class="fas fa-arrow-left"></i> Quay lại danh sách
+                </button>
+                <div class="solution-detail-wrapper">
+                    <div class="playlist-active-content">
+                        <div id="about-media-container" class="playlist-media">
+                        </div>
+                        <h3 id="about-active-title" style="margin: 15px 0 10px; color: var(--primary-color);"></h3>
+                        <p id="about-active-description" style="text-align: justify; color: #444; line-height: 1.6;"></p>
+                        <div id="about-active-gallery" class="playlist-gallery" style="margin-top: 20px; display: flex; gap: 10px; overflow-x: auto;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+        </div>
+    </div>
+
+    <!-- MODAL 2: PLAYLIST GIẢI PHÁP CHUYÊN NGÀNH -->
+    <div id="modal-solutions" class="custom-modal">
+        <div class="modal-content-wrapper solutions-modal-width">
+            <span class="modal-close" onclick="closeModal('modal-solutions')">&times;</span>
+            <h2 id="solutions-modal-title" style="margin-bottom: 20px; color: var(--primary-color);">Giải Pháp Chuyên Ngành</h2>
+            
+            <!-- VIEW 1: DANH SÁCH BÀI VIẾT/TÀI LIỆU CỦA GIẢI PHÁP -->
+            <div id="solutions-list-view" class="solutions-list-view">
+                <p data-i18n="modal-sol-list-desc" style="margin-bottom: 20px; color: #666;">Chọn một tài liệu hoặc chuyên đề kỹ thuật bên dưới để xem chi tiết:</p>
+                <div id="solutions-items-grid" class="solutions-items-grid" style="display: flex; flex-direction: column; gap: 10px;">
+                    <!-- Sẽ nạp danh sách các mục bằng JS kèm theo icon loại tài liệu (PDF, Album, Clip) -->
+                </div>
+            </div>
+
+            <!-- VIEW 2: CHI TIẾT BÀI VIẾT (DẠNG PLAYLIST) -->
+            <div id="solutions-detail-view" class="solutions-detail-view" style="display: none;">
+                <button id="btn-back-to-solutions-list" class="btn-secondary" style="margin-bottom: 15px; font-size: 13px; padding: 8px 16px; display: inline-flex; align-items: center; gap: 8px; border: 2px solid var(--primary-color); color: var(--primary-color) !important; background-color: transparent; cursor: pointer; border-radius: 6px; font-weight: 600;" data-i18n="btn-back">
+                    <i class="fas fa-arrow-left"></i> Quay lại danh sách
+                </button>
+                <div class="solution-detail-wrapper">
+                    <div class="playlist-active-content">
+                        <div id="playlist-media-container" class="playlist-media">
+                        </div>
+                        <h3 id="playlist-active-title" style="margin: 15px 0 10px; color: var(--primary-color);"></h3>
+                        <div id="playlist-active-date" style="font-size: 13px; color: #888; margin-bottom: 10px;"></div>
+                        <p id="playlist-active-description" style="text-align: justify; color: #444; line-height: 1.6;"></p>
+                        <div id="playlist-active-gallery" class="playlist-gallery" style="margin-top: 20px; display: flex; gap: 10px; overflow-x: auto;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- MODAL 3: LIÊN HỆ TUYỂN DỤNG -->
+    <div id="modal-recruitment" class="custom-modal">
+        <div class="modal-content-wrapper">
+            <span class="modal-close" onclick="closeModal('modal-recruitment')">&times;</span>
+            <h2 data-i18n="modal-rec-title" style="margin-bottom: 20px; color: var(--primary-color);">Cơ Hội Nghề Nghiệp Tại A.S.P.T</h2>
+            <p data-i18n="modal-rec-p1" style="margin-bottom: 20px; text-align: justify;">Tại A.S.P.T, chúng tôi luôn tìm kiếm những nhân tài đam mê thiết kế kiến trúc, quy hoạch, kỹ thuật kết cấu, cơ điện (MEP), dự toán và ứng dụng công nghệ BIM. Hãy đồng hành cùng chúng tôi để kiến tạo các công trình Hạng 1 tầm cỡ quốc gia.</p>
+            
+            <div id="recruitment-job-list" class="job-list" style="margin-bottom: 30px; display: flex; flex-direction: column; gap: 15px;">
+                <!-- Dữ liệu tuyển dụng sẽ được render động từ recruitmentData qua JS -->
+            </div>
+            
+            <div style="background: #f8f9fa; padding: 20px; border-radius: 8px; text-align: center;">
+                <h4 data-i18n="modal-rec-apply-title" style="margin-bottom: 10px;">Liên hệ ứng tuyển</h4>
+                <p data-i18n="modal-rec-apply-p" style="font-size: 14.5px; margin-bottom: 12px; line-height: 1.5;">Ứng viên quan tâm vui lòng gửi CV/Hồ sơ năng lực qua Email hoặc gọi điện trực tiếp để trao đổi chi tiết:</p>
+                <div style="display: flex; justify-content: center; gap: 30px; margin: 15px 0; flex-wrap: wrap;">
+                    <div>
+                        <i class="fas fa-envelope" style="color: var(--primary-color); font-size: 20px; margin-right: 5px;"></i>
+                        <a href="mailto:aspt@aspt.vn" style="font-size: 17px; font-weight: bold; color: var(--primary-color);">aspt@aspt.vn</a>
+                    </div>
+                    <div>
+                        <i class="fas fa-phone-alt" style="color: var(--primary-color); font-size: 20px; margin-right: 5px;"></i>
+                        <a href="tel:0982145011" style="font-size: 17px; font-weight: bold; color: var(--primary-color);">098.214.5011 (Mr. Thành)</a>
+                    </div>
+                </div>
+                <p style="font-size: 12px; color: #888; margin-top: 10px;" data-i18n="modal-rec-apply-note">Ghi chú: Tiêu đề email ghi rõ: [Ứng tuyển] - Vị trí - Họ tên - Số điện thoại</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- KHUNG CHAT AI AGENT NỔI (CHATBOT WIDGET) -->
+    <div id="ai-chat-widget" class="chat-widget">
+        <div class="chat-header">
+            <div style="display: flex; align-items: center; gap: 10px;">
+                <div class="chat-avatar"><i class="fas fa-robot"></i></div>
+                <div>
+                    <h4 style="margin: 0; font-size: 14px; color: white;">ASPT AI Assistant</h4>
+                    <span style="font-size: 10px; color: #a5d8ff;" data-i18n="chat-status-online">Trực tuyến 24/7</span>
+                </div>
+            </div>
+            <button id="btn-close-chat" class="chat-close-btn">&times;</button>
+        </div>
+        <div id="chat-messages" class="chat-messages">
+            <div class="chat-bubble bot-msg">
+                <span data-i18n="chat-bot-welcome">Kính chào quý khách! Tôi là Trợ lý trí tuệ nhân tạo đến từ ASPT. Tôi luôn sẵn sàng cung cấp hướng dẫn chi tiết liên quan tới việc lập quy hoạch, tư vấn pháp lý, lập hồ sơ thiết kế phần kiến trúc, kết cấu, cơ điện, hạ tầng kỹ thuật, dự toán… cho các dự án dân dụng và công nghiệp. Tôi cũng có thể giúp bạn sắp xếp một cuộc trao đổi trực tiếp cùng ban lãnh đạo của chúng tôi. Xin cho biết bạn đang cần hỗ trợ về lĩnh vực nào?</span>
+            </div>
+        </div>
+        <div class="chat-input-area">
+            <input type="text" id="chat-input" placeholder="Nhập câu hỏi của bạn..." data-i18n-placeholder="chat-placeholder">
+            <button id="btn-send-chat"><i class="fas fa-paper-plane"></i></button>
+        </div>
+    </div>
+
+    <!-- Data and Script -->
+    <script src="assets/data.js"></script>
+    <script src="lang.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

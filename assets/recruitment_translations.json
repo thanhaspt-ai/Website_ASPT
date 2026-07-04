@@ -1,0 +1,30 @@
+{
+    "job_0": {
+        "title_vi": "Tuyển dụng các Vị trí Thiết kế & Kỹ thuật",
+        "requirement_vi": "Chúng tôi đang tìm kiếm nhân sự cho các vị trí:\n• Kiến trúc sư công trình\n• Kiến trúc sư quy hoạch\n• Kỹ sư thiết kế Kết cấu\n• Kỹ sư Cơ Điện (MEP Coordinator)\n• Kỹ sư dự toán\n\nYêu cầu chung: Tốt nghiệp Đại học chuyên ngành tương ứng, sử dụng thành thạo các công cụ thiết kế chuyên nghiệp (Revit, AutoCAD, Etabs...), có tinh thần trách nhiệm và khả năng làm việc nhóm tốt.",
+        "type_vi": "Toàn thời gian",
+        "title_en": "Recruitment for Design & Engineering Positions",
+        "requirement_en": "We are looking for personnel for the following positions:\n• Project architect\n• Planning architect\n• Structural design engineer\n• Mechanical and Electrical Engineer (MEP Coordinator)\n• Estimating engineer\n\nGeneral requirements: Graduated from a relevant university, proficient in using professional design tools (Revit, AutoCAD, Etabs...), have a sense of responsibility and good teamwork ability.",
+        "type_en": "Full time",
+        "title_ja": "設計・エンジニアリング職の募集",
+        "requirement_ja": "弊社では以下の職種の人材を募集しております。\n• プロジェクトアーキテクト\n• プランニングアーキテクト\n• 構造設計エンジニア\n• 機械電気エンジニア (MEP コーディネーター)\n• 見積りエンジニア\n\n一般要件: 関連する大学を卒業し、専門的な設計ツール (Revit、AutoCAD、Etabs など) の使用に熟練し、責任感と優れたチームワーク能力を持っています。",
+        "type_ja": "フルタイム",
+        "title_zh": "设计与工程职位招聘",
+        "requirement_zh": "我们正在寻找以下职位的人员：\n• 项目建筑师\n• 规划建筑师\n• 结构设计工程师\n• 机电工程师（机电协调员）\n• 造价工程师\n\n一般要求：相关大学毕业，熟练使用专业设计工具（Revit、AutoCAD、Etabs...），有责任心和良好的团队合作能力。",
+        "type_zh": "全职"
+    },
+    "job_1": {
+        "title_vi": "Kỹ sư Cơ Điện (MEP Coordinator)",
+        "requirement_vi": "Yêu cầu: Thiết kế hệ thống điện, HVAC hoặc cấp thoát nước, có kinh nghiệm triển khai mô hình BIM Revit MEP.",
+        "type_vi": "Toàn thời gian",
+        "title_en": "Mechanical and Electrical Engineer (MEP Coordinator)",
+        "requirement_en": "Requirements: Design electrical, HVAC or water supply and drainage systems, have experience implementing BIM Revit MEP models.",
+        "type_en": "Full time",
+        "title_ja": "機械電気エンジニア (MEP コーディネーター)",
+        "requirement_ja": "要件: 電気、HVAC、または給排水システムを設計し、BIM Revit MEP モデルの実装経験がある。",
+        "type_ja": "フルタイム",
+        "title_zh": "机电工程师（MEP协调员）",
+        "requirement_zh": "要求：设计电气、HVAC 或给排水系统，具有实施 BIM Revit MEP 模型的经验。",
+        "type_zh": "全职"
+    }
+}

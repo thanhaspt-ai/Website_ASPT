@@ -1,0 +1,54 @@
+{
+    "phap-ly_1-chung-chi-hang-1": {
+        "title_vi": "Chứng chỉ Năng lực HĐXD Hạng 1 (Dân dụng)",
+        "desc_vi": "Chứng chỉ Hạng 1 về Thiết kế và Thẩm tra thiết kế công trình Dân dụng do Bộ Xây dựng cấp.",
+        "title_en": "Certificate of Competency in Construction Construction Class 1 (Civil)",
+        "desc_en": "Class 1 Certificate in Civil Engineering Design and Design Verification issued by the Ministry of Construction.",
+        "title_ja": "建設業技能検定1級（民事）",
+        "desc_ja": "建設省発行の土木設計・設計検定1級合格証。",
+        "title_zh": "建筑施工一级资质证书（土建）",
+        "desc_zh": "建设部颁发的土木工程设计及设计验证一级证书。",
+        "media_type": "pdf",
+        "file": "assets/about-us/phap-ly/1-chung-chi-hang-1/1-CC năng lực HĐXD (Hạng I).pdf",
+        "images": []
+    },
+    "phap-ly_0-dang-ky-kinh-doanh": {
+        "title_vi": "Giấy phép Đăng ký kinh doanh (Lần 6)",
+        "desc_vi": "Đăng ký lần đầu ngày 11/05/2011, thay đổi lần thứ 6 ngày 21/10/2021 do Sở KH&ĐT TP Đà Nẵng cấp.",
+        "title_en": "Business Registration License (6th time)",
+        "desc_en": "First registration on May 11, 2011, 6th change on October 21, 2021 issued by the Department of Planning and Investment of Da Nang City.",
+        "title_ja": "事業者登録許可（6回目）",
+        "desc_ja": "最初の登録は2011年5月11日、6回目の変更は2021年10月21日にダナン市計画投資局によって発行されました。",
+        "title_zh": "商业登记证（第六次）",
+        "desc_zh": "2011年5月11日首次登记，2021年10月21日第6次变更，由岘港市计划投资部颁发。",
+        "media_type": "pdf",
+        "file": "assets/about-us/phap-ly/0-dang-ky-kinh-doanh/0-GP Đăng ký kinh doanh (lan 6) 21102021.pdf",
+        "images": []
+    },
+    "phap-ly_2-chung-chi-hang-2": {
+        "title_vi": "Chứng chỉ Năng lực HĐXD Hạng 2 (Nhà công nghiệp)",
+        "desc_vi": "Chứng chỉ Hạng 2 về Thiết kế và Thẩm tra thiết kế công trình Nhà công nghiệp.",
+        "title_en": "Certificate of Competency in Construction Construction Class 2 (Industrial Building)",
+        "desc_en": "Class 2 Certificate in Industrial Building Design and Design Verification.",
+        "title_ja": "建設業技能検定2級（産業建築）",
+        "desc_ja": "工業用建築設計および設計検証におけるクラス 2 証明書。",
+        "title_zh": "建筑施工二级适任证书（工业建筑）",
+        "desc_zh": "工业建筑设计和设计验证二级证书。",
+        "media_type": "pdf",
+        "file": "assets/about-us/phap-ly/2-chung-chi-hang-2/2-CC năng lực HĐXD nhà CN (Hạng II).pdf",
+        "images": []
+    },
+    "phap-ly_3-chung-chi-hang-3": {
+        "title_vi": "Chứng chỉ Năng lực HĐXD Hạng 3 (Quy hoạch & Hạ tầng kỹ thuật)",
+        "desc_vi": "Chứng chỉ Hạng 3 về Lập thiết kế quy hoạch xây dựng và Thiết kế, thẩm tra công trình Hạ tầng kỹ thuật.",
+        "title_en": "Certificate of Construction Competency Level 3 (Planning & Technical Infrastructure)",
+        "desc_en": "Grade 3 Certificate in Construction Planning Design and Design and Verification of Technical Infrastructure Works.",
+        "title_ja": "建設業技能検定3級（計画・技術基盤）",
+        "desc_ja": "建設計画設計および技術インフラ工事の設計および検証におけるグレード 3 証明書。",
+        "title_zh": "建筑能力三级证书（规划和技术基础设施）",
+        "desc_zh": "建筑规划设计和技术基础设施工程设计与验证三级证书。",
+        "media_type": "pdf",
+        "file": "assets/about-us/phap-ly/3-chung-chi-hang-3/3-CC năng lực HĐXD Quy hoạch & HTKT (Hạng III).pdf",
+        "images": []
+    }
+}
