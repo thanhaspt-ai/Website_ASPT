@@ -323,7 +323,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if (images.length > 0) {
             mainImageHtml = `
                 <div class="project-gallery-viewport" style="position: relative; width: 100%; max-width: 800px; height: 500px; background: #f8f9fa; border-radius: 12px; display: flex; align-items: center; justify-content: center; overflow: hidden; box-shadow: 0 8px 30px rgba(0,0,0,0.08); margin: 0 auto;">
-                    <img id="project-main-image" src="${images[0]}" style="max-width: 100%; max-height: 100%; object-fit: contain; transition: all 0.3s ease;">
+                    <img id="project-main-image" src="${images[0]}" style="width: 100%; height: 100%; object-fit: contain; transition: all 0.3s ease;">
                     
                     ${images.length > 1 ? `
                         <button class="gallery-nav-btn prev-btn" onclick="window.changeProjectMainImage(window.currentProjectActiveIndex() - 1)" style="left: 15px;"><i class="fas fa-chevron-left"></i></button>
