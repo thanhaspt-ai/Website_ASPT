@@ -53,11 +53,11 @@ const translations = {
         "sol-subtitle": "ASPT không chỉ cung cấp bản vẽ, chúng tôi mang đến giải pháp toàn diện, giải quyết mọi bài toán kỹ thuật và pháp lý.",
         
         "sol-1-t": "Chủ đầu tư Dự án Lớn (Cấp 1, Cấp 2)",
-        "sol-1-d": "Tổng thầu thiết kế Kiến trúc, Kết cấu, MEP. Kinh nghiệm xử lý hầm sâu, nền đất yếu, cầu trục 100 tấn và thủ tục pháp lý phức tạp.",
+        "sol-1-d": "Tổng thầu thiết kế toàn bộ dự án xây dựng, giàu kinh nghiệm thiết kế các công trình nhịp lớn (trên 30m), nhiều tầng hầm, trên nền đất yếu, công trình công nghiệp nặng và xử lý các thủ tục pháp lý phức tạp.",
         "sol-2-t": "Chủ đầu tư Dự án Vừa & Nhỏ",
-        "sol-2-d": "Giải pháp tối ưu chi phí và không gian cho căn hộ cho thuê (6-9 tầng), khách sạn mini, biệt thự cao cấp.",
+        "sol-2-d": "Thiết kế công trình mang tính thẩm mỹ cao cùng các giải pháp kết cấu linh hoạt nhằm xử lý những vấn đề phức tạp về nền móng, tầng hầm cũng như không gian nhịp lớn đối với các công trình xây chen trong đô thị.",
         "sol-3-t": "Đối Tác Thiết Kế (B2B)",
-        "sol-3-d": "Hợp tác thiết kế chuyên sâu Kết cấu, Cơ điện, Lập dự toán, và triển khai mô hình BIM (LOD 300 - 400).",
+        "sol-3-d": "Hợp tác cùng các cá nhân, đơn vị tư vấn hoặc nhà thầu thi công nhằm phối hợp thực hiện công tác tổng thầu thiết kế cho toàn bộ các dự án (quy mô lên đến cấp 1).",
         "sol-4-t": "Chủ đầu tư Dự án Quy hoạch & Hạ tầng kỹ thuật",
         "sol-4-d": "Lập quy hoạch chi tiết 1/500, thiết kế cơ sở hạ tầng kỹ thuật (cấp 3) nhanh chóng, chuẩn xác.",
 
@@ -167,11 +167,11 @@ const translations = {
         "sol-subtitle": "ASPT provides comprehensive solutions, solving all technical and legal problems.",
         
         "sol-1-t": "Large Investors (Class 1, 2)",
-        "sol-1-d": "General Design Contractor (Architecture, Structure, MEP). Experienced in deep basements, weak soil, 100-ton cranes, and legal procedures.",
+        "sol-1-d": "General design contractor for the entire construction project, highly experienced in designing long-span structures (over 30m), multi-level basements, weak soil foundations, heavy industrial facilities, and handling complex legal procedures.",
         "sol-2-t": "Medium & Small Projects",
-        "sol-2-d": "Cost and space optimization for rental apartments (6-9 floors), mini-hotels, and luxury villas.",
+        "sol-2-d": "High-aesthetic building design combined with flexible structural solutions to handle complex foundation, basement, and long-span space issues for urban infill construction projects.",
         "sol-3-t": "Design Partners (B2B)",
-        "sol-3-d": "Deep cooperation in Structure, MEP, Estimating, and BIM modeling (LOD 300 - 400).",
+        "sol-3-d": "Collaborate with individuals, consulting firms, or construction contractors to coordinate and execute general design contracting for all projects (scale up to Level 1).",
         "sol-4-t": "Planning & Infrastructure",
         "sol-4-d": "1/500 detailed planning and Level 3 infrastructure design delivered quickly and accurately.",
 
@@ -281,11 +281,11 @@ const translations = {
         "sol-subtitle": "ASPTは図面を提供するだけでなく、技術的および法的な問題を解決する包括的なソリューションを提供します。",
         
         "sol-1-t": "大規模投資家 (クラス1, 2)",
-        "sol-1-d": "意匠・構造・MEPの設計総合請負。深い地下室、軟弱地盤、100トンクレーン、複雑な法的手続きの経験。",
+        "sol-1-d": "建設プロジェクト全体の設計総合請負。大スパン構造（30m以上）、多層地下室、軟弱地盤、重工業施設、および複雑な法的手続きの設計における豊富な経験。",
         "sol-2-t": "中・小規模プロジェクト",
-        "sol-2-d": "賃貸アパート（6〜9階）、ミニホテル、高級ヴィラのコストとスペースの最適化。",
+        "sol-2-d": "都市部の狭小地・建替えプロジェクトにおける、複雑な基礎・地下室・大スパン空間の課題に対応する、高い意匠性と柔軟な構造ソリューションを組み合わせた建物設計。",
         "sol-3-t": "設計パートナー (B2B)",
-        "sol-3-d": "構造、MEP、積算、BIMモデリング（LOD 300 - 400）における深い協力。",
+        "sol-3-d": "個人、コンサルタント会社、または施工会社と提携し、すべてのプロジェクト（レベル1規模まで）の設計総合請负を連携して実行します。",
         "sol-4-t": "都市計画・インフラ",
         "sol-4-d": "1/500の詳細な計画とインフラストラクチャの設計を迅速かつ正確に。",
 
@@ -395,11 +395,11 @@ const translations = {
         "sol-subtitle": "ASPT不仅提供图纸，我们提供全面的解决方案，解决所有技术和法律难题。",
         
         "sol-1-t": "大型项目投资者 (一级, 二级)",
-        "sol-1-d": "建筑、结构、机电设计总包。拥有处理深基坑、软土地基、100吨桥式起重机和复杂法律程序的经验。",
+        "sol-1-d": "整个建设项目的设计总承包，在设计大跨度结构（30米以上）、多层地下室、软土地基、重工业设施以及处理复杂的法律程序方面拥有丰富的经验。",
         "sol-2-t": "中小型项目",
-        "sol-2-d": "为出租公寓 (6-9层)、迷你酒店、高级别墅优化成本和空间的解决方案。",
+        "sol-2-d": "高美学建筑设计与灵活的结构解决方案相结合，以解决城市填充式建筑项目中复杂的地下室、地基和大跨度空间问题。",
         "sol-3-t": "设计合作伙伴 (B2B)",
-        "sol-3-d": "深入合作进行结构、机电设计、预算编制及部署BIM模型 (LOD 300 - 400)。",
+        "sol-3-d": "与个人、咨询单位或施工承包商合作，协调并执行所有项目（规模达1级）的设计总承包工作。",
         "sol-4-t": "规划与基础设施",
         "sol-4-d": "快速准确地编制1/500详细规划、设计技术基础设施 (三级)。",
 
