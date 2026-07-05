@@ -528,9 +528,42 @@ a {
     .nav-links li { margin: 0; width: 100%; text-align: center; }
     .lang-switcher { justify-content: center; margin-bottom: 15px; }
 
-    .hero h1 { font-size: 2.5rem; }
-    .stats-grid { grid-template-columns: repeat(2, 1fr); }
-    .section-title h2 { font-size: 2rem; }
+    /* Hero Section Mobile Optimize */
+    .hero {
+        height: auto;
+        min-height: 100vh;
+        padding: 120px 0 60px;
+    }
+    .hero h1 { 
+        font-size: 2.2rem; 
+        line-height: 1.3;
+    }
+    .hero p {
+        font-size: 1.2rem;
+    }
+    .hero .sub-text {
+        font-size: 0.95rem;
+        margin-bottom: 25px;
+    }
+    .hero-actions {
+        flex-direction: column;
+        gap: 12px;
+        width: 100%;
+        max-width: 340px;
+        margin: 0 auto;
+    }
+    .hero-actions a {
+        width: 100%;
+        text-align: center;
+        padding: 10px 15px;
+    }
+
+    /* Stats Mobile */
+    .stats-grid { grid-template-columns: repeat(2, 1fr); gap: 20px; }
+    .stat-item h3 { font-size: 2.2rem; }
+    .stat-item p { font-size: 0.9rem; }
+    
+    .section-title h2 { font-size: 1.8rem; }
     .about-grid { grid-template-columns: 1fr; text-align: center; }
     .about-content ul { text-align: left; }
     
@@ -540,6 +573,39 @@ a {
     
     .groups-grid {
         grid-template-columns: repeat(2, 1fr) !important;
+    }
+
+    /* Mobile Touch optimization: Make portfolio title always visible (No Hover) */
+    .portfolio-info {
+        position: relative;
+        bottom: 0 !important;
+        background: rgba(10, 61, 115, 0.95);
+        padding: 15px 10px;
+    }
+    .portfolio-item:hover img {
+        transform: none;
+    }
+
+    /* Floating Contact repositioning to the left on mobile to avoid overlapping with Chatbot on the right */
+    .floating-contact {
+        left: 20px;
+        right: auto;
+        bottom: 20px;
+    }
+    .contact-btn {
+        width: 44px;
+        height: 44px;
+        font-size: 20px;
+    }
+
+    /* Modal Mobile Spacing */
+    .modal-content-wrapper {
+        padding: 20px 15px;
+        width: 95%;
+    }
+    .legal-docs-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
     }
 }
 
