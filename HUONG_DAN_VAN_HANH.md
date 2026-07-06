@@ -92,10 +92,10 @@ Mỗi thư mục con bắt buộc phải chứa một tệp cấu hình có tên
 
 ## 3. KỊCH BẢN CẬP NHẬT NỘI DUNG HẰNG NGÀY (ADMIN WORKFLOW)
 
-Quy trình cập nhật nội dung từ máy tính cá nhân của bạn (user "THANH") lên website chính thức chạy trên máy chủ được tối giản hóa qua 4 bước:
+Quy trình cập nhật nội dung từ máy tính cá nhân của bạn (user "THANH") lên website chính thức chạy trên máy chủ được tối giản hóa qua 5 bước kiểm soát chặt chẽ:
 
 ```text
-[BƯỚC 1: Soạn tệp & JSON] -> [BƯỚC 2: Chạy update_data.py] -> [BƯỚC 3: Đồng bộ GitHub Desktop] -> [Hoàn tất cập nhật web]
+[BƯỚC 1: Soạn tệp & JSON] -> [BƯỚC 2: Chạy biên dịch cục bộ] -> [BƯỚC 3: Phê duyệt cục bộ] -> [BƯỚC 4: Đẩy lên GitHub] -> [BƯỚC 5: Đồng bộ lên Server]
 ```
 
 ### Quy tắc Tối ưu hóa Cập nhật nhanh bằng hậu tố thư mục:
@@ -104,20 +104,20 @@ Quy trình cập nhật nội dung từ máy tính cá nhân của bạn (user "
 - **Thư mục kết thúc bằng `-R2` (Chỉ cập nhật văn bản)**: Chỉ đọc file tài liệu `docx`/`info.json` để chạy dịch thuật sang các ngôn ngữ, bỏ qua việc quét lại ảnh.
 - **Thư mục kết thúc bằng `-R3` (Cập nhật toàn bộ)**: Thực hiện đồng thời cả hai tiến trình quét hình ảnh và dịch thuật đối với thư mục đã tồn tại.
 - **Thư mục kết thúc bằng `-R4` (Thêm mới mục)**: Được dùng khi bổ sung mục giải pháp/dự án mới hoàn toàn. Hệ thống sẽ quét toàn bộ ảnh, tài liệu và thực hiện dịch thuật đầy đủ.
-- **Thư mục kết thúc bằng `-RX` (Xóa bỏ mục)**: Dùng khi muốn xóa bỏ hoàn toàn mục này. Hệ thống sẽ **xóa thư mục trên đĩa đĩa** và loại bỏ khỏi cơ sở dữ liệu web.
+- **Thư mục kết thúc bằng `-RX` (Xóa bỏ mục)**: Dùng khi muốn xóa bỏ hoàn toàn mục này. Hệ thống sẽ **xóa thư mục trên đĩa** và loại bỏ khỏi cơ sở dữ liệu web.
 - **Thư mục không có hậu tố `-R..`**: Hệ thống sẽ lấy trực tiếp thông tin từ bộ nhớ đệm (cực kỳ nhanh, chỉ dưới 2 giây để hoàn thành quét toàn bộ website).
 
-*Lưu ý quan trọng*: Sau khi chạy cập nhật `update_data.py` thành công, hệ thống sẽ **tự động xóa bỏ các hậu tố `-R1`, `-R2`, `-R3`, `-R4`** trên đĩa để đưa thư mục về dạng tên bình thường, giúp bạn nhận biết phần việc đã được xử lý xong. Dữ liệu có hậu tố `-RX` sẽ bị xóa hoàn toàn khỏi đĩa cứng.
+*Lưu ý quan trọng*: Sau khi chạy cập nhật thành công, hệ thống sẽ **tự động xóa bỏ các hậu tố `-R1`, `-R2`, `-R3`, `-R4`** trên đĩa để đưa thư mục về dạng tên bình thường, giúp bạn nhận biết phần việc đã được xử lý xong. Dữ liệu có hậu tố `-RX` sẽ bị xóa hoàn toàn khỏi đĩa cứng.
 
-### Chi tiết các bước thực hiện:
-- **Bước 1**: Tạo thư mục bài viết mới tại máy Client theo đúng quy tắc đánh số ở Mục 1 và thêm hậu tố cập nhật mong muốn (ví dụ: `1-6-giai-phap-moi-R3` nếu muốn cập nhật cả ảnh và dịch text).
-- **Bước 2**: Nhấp đúp chuột chạy file kịch bản **`update_data.py`** trên máy tính của bạn.
-  - *Tác vụ tự động*: Kịch bản Python sẽ tự động quét các thư mục gắn đuôi `-R..`, thực hiện tác vụ tương ứng, dịch sang các ngôn ngữ tương ứng, lưu trữ vào tệp cơ sở dữ liệu `data.js` và tự động đổi tên thư mục gốc để dọn dẹp hậu tố.
-- **Bước 3**: Mở phần mềm **GitHub Desktop** trên máy Client của bạn.
-  - Phần mềm sẽ tự động liệt kê các file mới được thay đổi.
-  - Nhập một tiêu đề ngắn tại ô Commit (Ví dụ: "Đăng bài giải pháp mới") và nhấn nút **Commit to main**.
-  - Nhấn nút **Push origin** ở góc trên để đẩy mã nguồn lên kho chứa GitHub bảo mật.
-- **Bước 4**: Máy chủ Server 24/7 của công ty sẽ tự động phát hiện thay đổi trên GitHub qua Webhook, thực hiện lệnh `git pull` để cập nhật mã nguồn mới nhất lên tên miền `aspt.vn` trong vòng vài giây.
+### Chi tiết 5 bước thực hiện:
+- **Bước 1 (Soạn tệp)**: Tạo thư mục bài viết mới tại máy Client theo đúng quy tắc đánh số ở Mục 1 và thêm hậu tố cập nhật mong muốn (ví dụ: `1-6-giai-phap-moi-R4` nếu muốn thêm mới giải pháp).
+- **Bước 2 (Chạy biên dịch)**: Anh chạy file kịch bản **`deploy_testing.py`** trên máy Client.
+  - *Tác vụ tự động*: Kịch bản Python sẽ tự động quét các thư mục gắn đuôi `-R..`, thực hiện dịch thuật sang các ngôn ngữ, cập nhật vào file dữ liệu `data.js` và đổi tên thư mục để dọn dẹp hậu tố cục bộ.
+- **Bước 3 (Phê duyệt cục bộ)**: Anh mở file **`Website_ASPT/index.html`** trực tiếp trên trình duyệt máy Client để xem trước giao diện và kiểm tra lỗi hiển thị/chính tả. Nếu chưa ưng ý, anh có thể sửa lại và chạy lại Bước 2.
+- **Bước 4 (Đẩy lên GitHub)**: Sau khi bản xem trước đã hoàn hảo, anh mở phần mềm **GitHub Desktop** trên máy Client:
+  - Nhập một tiêu đề ngắn tại ô Commit (Ví dụ: *"Đăng bài giải pháp mới"*) $\rightarrow$ nhấn **Commit to main**.
+  - Nhấn nút **Push origin** ở góc trên để đẩy mã nguồn lên GitHub. Anh có thể truy cập trang thử nghiệm GitHub Pages để xem lại một lần nữa trên internet.
+- **Bước 5 (Đồng bộ lên Server)**: Anh mở Ultraviewer (hoặc thao tác trực tiếp trên Server) $\rightarrow$ Nhấp đúp chuột vào file **`Cap_Nhat_Web.bat`** trên màn hình Desktop của Server. Trang web chính thức `aspt.vn` sẽ lập tức cập nhật dữ liệu mới từ GitHub về trong 2 giây!
 
 ---
 
