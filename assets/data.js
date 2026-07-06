@@ -2150,6 +2150,95 @@ const aboutCultureData = [
         ]
     },
     {
+        "id": "van-hoa_6-Kỷ niệm 15 năm thành lập cty ASPT",
+        "title": {
+            "vi": "Kỷ niệm 15 năm thành lập công ty ASPT",
+            "en": "Celebrating the 15th anniversary of the establishment of ASPT company",
+            "ja": "ASPT会社設立15周年を迎える",
+            "zh": "庆祝ASPT公司成立15周年"
+        },
+        "desc": {
+            "vi": "Hình ảnh hoạt động nhân kỷ niệm 15 năm ngày thành lập công ty A.S.P.T.",
+            "en": "Images of activities celebrating the 15th anniversary of the founding of A.S.P.T.",
+            "ja": "A.S.P.T.創立15周年記念活動のイメージ",
+            "zh": "庆祝A.S.P.T成立15周年活动图片"
+        },
+        "media_type": "album",
+        "cover": "assets/about-us/van-hoa/6-Kỷ niệm 15 năm thành lập cty ASPT/1.jpg",
+        "images": [
+            "assets/about-us/van-hoa/6-Kỷ niệm 15 năm thành lập cty ASPT/1.jpg",
+            "assets/about-us/van-hoa/6-Kỷ niệm 15 năm thành lập cty ASPT/2.jpg",
+            "assets/about-us/van-hoa/6-Kỷ niệm 15 năm thành lập cty ASPT/3.jpg",
+            "assets/about-us/van-hoa/6-Kỷ niệm 15 năm thành lập cty ASPT/4.jpg",
+            "assets/about-us/van-hoa/6-Kỷ niệm 15 năm thành lập cty ASPT/5.jpg",
+            "assets/about-us/van-hoa/6-Kỷ niệm 15 năm thành lập cty ASPT/6.jpg",
+            "assets/about-us/van-hoa/6-Kỷ niệm 15 năm thành lập cty ASPT/7.jpg",
+            "assets/about-us/van-hoa/6-Kỷ niệm 15 năm thành lập cty ASPT/8.jpg",
+            "assets/about-us/van-hoa/6-Kỷ niệm 15 năm thành lập cty ASPT/9.jpg",
+            "assets/about-us/van-hoa/6-Kỷ niệm 15 năm thành lập cty ASPT/10.jpg",
+            "assets/about-us/van-hoa/6-Kỷ niệm 15 năm thành lập cty ASPT/13.jpg",
+            "assets/about-us/van-hoa/6-Kỷ niệm 15 năm thành lập cty ASPT/14.jpg",
+            "assets/about-us/van-hoa/6-Kỷ niệm 15 năm thành lập cty ASPT/16.jpg",
+            "assets/about-us/van-hoa/6-Kỷ niệm 15 năm thành lập cty ASPT/17.jpg",
+            "assets/about-us/van-hoa/6-Kỷ niệm 15 năm thành lập cty ASPT/19.jpg",
+            "assets/about-us/van-hoa/6-Kỷ niệm 15 năm thành lập cty ASPT/21.jpg",
+            "assets/about-us/van-hoa/6-Kỷ niệm 15 năm thành lập cty ASPT/22.jpg",
+            "assets/about-us/van-hoa/6-Kỷ niệm 15 năm thành lập cty ASPT/25.jpg",
+            "assets/about-us/van-hoa/6-Kỷ niệm 15 năm thành lập cty ASPT/26.jpg",
+            "assets/about-us/van-hoa/6-Kỷ niệm 15 năm thành lập cty ASPT/34.jpg",
+            "assets/about-us/van-hoa/6-Kỷ niệm 15 năm thành lập cty ASPT/35.jpg",
+            "assets/about-us/van-hoa/6-Kỷ niệm 15 năm thành lập cty ASPT/37.jpg",
+            "assets/about-us/van-hoa/6-Kỷ niệm 15 năm thành lập cty ASPT/38.jpg",
+            "assets/about-us/van-hoa/6-Kỷ niệm 15 năm thành lập cty ASPT/40.jpg",
+            "assets/about-us/van-hoa/6-Kỷ niệm 15 năm thành lập cty ASPT/41.jpg",
+            "assets/about-us/van-hoa/6-Kỷ niệm 15 năm thành lập cty ASPT/42.jpg"
+        ]
+    },
+    {
+        "id": "van-hoa_5-Kỷ niệm 12 năm thành lập cty ASPT",
+        "title": {
+            "vi": "Kỷ niệm 12 năm thành lập công ty ASPT",
+            "en": "Celebrating 12 years of establishment of ASPT company",
+            "ja": "ASPT会社設立12周年を迎える",
+            "zh": "庆祝ASPT公司成立12周年"
+        },
+        "desc": {
+            "vi": "Hình ảnh hoạt động nhân kỷ niệm 12 năm ngày thành lập công ty A.S.P.T.",
+            "en": "Images of activities celebrating the 12th anniversary of the founding of A.S.P.T.",
+            "ja": "A.S.P.T.創立12周年記念活動イメージ",
+            "zh": "庆祝A.S.P.T成立12周年活动图片"
+        },
+        "media_type": "album",
+        "cover": "assets/about-us/van-hoa/5-Kỷ niệm 12 năm thành lập cty ASPT/A1.jpg",
+        "images": [
+            "assets/about-us/van-hoa/5-Kỷ niệm 12 năm thành lập cty ASPT/A1.jpg",
+            "assets/about-us/van-hoa/5-Kỷ niệm 12 năm thành lập cty ASPT/A2.jpg",
+            "assets/about-us/van-hoa/5-Kỷ niệm 12 năm thành lập cty ASPT/A3.jpg",
+            "assets/about-us/van-hoa/5-Kỷ niệm 12 năm thành lập cty ASPT/A4.jpg",
+            "assets/about-us/van-hoa/5-Kỷ niệm 12 năm thành lập cty ASPT/A5.jpg",
+            "assets/about-us/van-hoa/5-Kỷ niệm 12 năm thành lập cty ASPT/A6.jpg",
+            "assets/about-us/van-hoa/5-Kỷ niệm 12 năm thành lập cty ASPT/A7.jpg",
+            "assets/about-us/van-hoa/5-Kỷ niệm 12 năm thành lập cty ASPT/A8.jpg",
+            "assets/about-us/van-hoa/5-Kỷ niệm 12 năm thành lập cty ASPT/A9.jpg",
+            "assets/about-us/van-hoa/5-Kỷ niệm 12 năm thành lập cty ASPT/A10.jpg",
+            "assets/about-us/van-hoa/5-Kỷ niệm 12 năm thành lập cty ASPT/A11.jpg",
+            "assets/about-us/van-hoa/5-Kỷ niệm 12 năm thành lập cty ASPT/A12.jpg",
+            "assets/about-us/van-hoa/5-Kỷ niệm 12 năm thành lập cty ASPT/A13.jpg",
+            "assets/about-us/van-hoa/5-Kỷ niệm 12 năm thành lập cty ASPT/A14.jpg",
+            "assets/about-us/van-hoa/5-Kỷ niệm 12 năm thành lập cty ASPT/A15.jpg",
+            "assets/about-us/van-hoa/5-Kỷ niệm 12 năm thành lập cty ASPT/A16.jpg",
+            "assets/about-us/van-hoa/5-Kỷ niệm 12 năm thành lập cty ASPT/A17.jpg",
+            "assets/about-us/van-hoa/5-Kỷ niệm 12 năm thành lập cty ASPT/A18.jpg",
+            "assets/about-us/van-hoa/5-Kỷ niệm 12 năm thành lập cty ASPT/A19.jpg",
+            "assets/about-us/van-hoa/5-Kỷ niệm 12 năm thành lập cty ASPT/A20.jpg",
+            "assets/about-us/van-hoa/5-Kỷ niệm 12 năm thành lập cty ASPT/A21.jpg",
+            "assets/about-us/van-hoa/5-Kỷ niệm 12 năm thành lập cty ASPT/A22.jpg",
+            "assets/about-us/van-hoa/5-Kỷ niệm 12 năm thành lập cty ASPT/A23.jpg",
+            "assets/about-us/van-hoa/5-Kỷ niệm 12 năm thành lập cty ASPT/A24.jpg",
+            "assets/about-us/van-hoa/5-Kỷ niệm 12 năm thành lập cty ASPT/A25.jpg"
+        ]
+    },
+    {
         "id": "van-hoa_3-ky-niem-nhan-vien-10-nam",
         "title": {
             "vi": "Kỷ niệm nhân viên gắn bó trên 10 năm (2024)",
